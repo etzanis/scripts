@@ -3,7 +3,7 @@ exec 2>&1
 sudo apt-get install \
     gawk g++ gcc make libc6-dev libreadline6-dev zlib1g-dev libssl-dev \
     libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev \
-    libncurses5-dev automake libtool bison pkg-config libffi-dev curl git
+    libncurses5-dev automake libtool bison pkg-config libffi-dev curl
 
 mkdir -p ~/src
 
