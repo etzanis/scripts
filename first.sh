@@ -1,5 +1,8 @@
 exec 2>&1
 
+sudo /usr/bin/apt-key adv --keyserver pool.sks-keyservers.net --recv 1078ECD7
+echo "deb http://apt.arvados.org/ trusty main" | sudo tee /etc/apt/sources.list.d/arvados.list
+
 sudo apt-get install \
     gawk g++ gcc make libc6-dev libreadline6-dev zlib1g-dev libssl-dev \
     libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev \
